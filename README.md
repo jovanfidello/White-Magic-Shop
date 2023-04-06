@@ -1,4 +1,4 @@
-# White-Magic-Shop
+# White Magic Shop
 
 # Kelompok 4
 Anggota <br />
