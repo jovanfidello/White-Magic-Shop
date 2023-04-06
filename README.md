@@ -6,6 +6,9 @@ Anggota <br />
 - Jovan Fidello (00000067827) <br />
 - Joicelyn Naradiska(00000068868) <br />
 
+Link Github : <br />
+(https://github.com/jovanfidello/White-Magic-Shop) <br />
+
 Deskripsi Game: <br />
 White’s Magic Shop merupakan sebuah permainan “ idle clicker “ yang dimainkan dengan cara mengklik karakter dan menjual dagangan berupa potion. <br />
 
