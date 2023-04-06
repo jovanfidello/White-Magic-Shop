@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link href="https:fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="./Asset/Icon/witchhat.png">
+    <title>White Magic Shop</title>
+    <link rel="stylesheet" type="text/css" href="WhiteMagicShop.css" />
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li>
+                <button class="btnnav utama" style="background-image: url('./Asset/Images/btnbg1.jpeg');background-size: cover;">
+                    <a class="active" href="WhiteMagicShop.html">PLAY GAME</a>
+                </button>
+            </li>
+            <li>
+                <button class="btnnav" style="background-image: url('./Asset/Images/btnbg2.jpeg');background-size: cover;">
+                    <a href="AboutUsPage.html"><span style="color: rgb(112, 108, 108);">ABOUT</span></a>
+                </button>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="bungkus" class="container">
+        <div id="upper" class="container">
+            <h1 class="container"></h1>
+            <audio id="background-music" loop>
+          <source src="Asset/Sound/Backsound.mp3" type="audio/mpeg" />
+        </audio>
+            <button id="play-button" onclick="togglePlay()"><img id="play-icon" src="Asset/Icon/Icon_MusicOff.png" /></button>
+        </div>
+        <div id="firstRow" class="container">
+            <div class="container" id="money">
+                <p id="moneyClick"><img id="play-icon" src="Asset/Icon/money.png" />&nbsp; &nbsp; =</p>
+                <div id="moneyValue">0</div>
+            </div>
+            <div id="bungkusAuto">
+                <div id="auto">
+                    <div class="container" id="autoValue">Budak: 0</div>
+                    <p id="autoCost">Cost: 10</p>
+                </div>
+                <div class="container" id="buttonstyle">
+                    <button onclick="buyAuto()" type="button" id="buyAuto" class="btn btn-Light" title="1 Budak akan meenghasilkan 1 coin setiap waktu">Beli Budak</button>
+                    <button type="button" id="jamIstirahat" onclick="jamIstirahat()" class="btn btn-Light" title="Budak akan beristirahat dan tidak akan menghasilan coin">Jam Istirahat</button>
+                </div>
+            </div>
+            <div class="container" id="bungkusCabang">
+                <div id="cabang">
+                    <div class="container" id="cabangValue">Sewa Penglaris: 0</div>
+                    <p id="cabangCost">Cost: 50</p>
+                </div>
+                <div id="buttonstyle" class="container">
+                    <button onclick="buyCabang()" type="button" id="buyCabang" class="btn btn-Light" title="Penglaris akan membuat coin yang dihasilkan menjadi lebih banyak">Sewa Penglaris</button>
+                </div>
+            </div>
+        </div>
+        <div id="secondRow" class="container">
+            <div id="Upgrade" class="container">
+                <h2>Dagangan</h2>
+                <ul>
+                    <div class="container" id="shop">
+                        <li>
+                            <button class="btn btn-Light" onclick="jualHealing()" id="jualHealing" style="margin-top:10px">Jual Healing Potion</button>
+                            <button class="btn btn-Light" onclick="levelUpHealing()" id="levelHealing">Level Up Healing Potion</button>
+                        </li>
+                        <li class="container" id="healingJar">
+                            <p id="healingValue">0</p>
+                        </li>
+                        <div id="upgradecostheal">
+                            <li class="container">
+                                <p id="sellHealing">Selling Price: 500</p>
+                            </li>
+                            <li class="container">
+                                <p id="upgradeHealingCost">Upgrade Cost: 1000</p>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="container" id="shop">
+                        <li>
+                            <button class="btn btn-Light" onclick="jualInvisibility()" id="jualInvisibility">Jual Invisibility Potion</button>
+                            <button class="btn btn-Light" onclick="levelUpInvisibility()" id="levelUpInvisibility">Level up Invisibility Potion</button>
+                        </li>
+                        <li class="container" id="invisibilityJar">
+                            <p id="invisibilityValue">0</p>
+                        </li>
+                        <div id="upgradecostinvis">
+                            <li class="container">
+                                <p id="sellInvisibility">Selling Price: 1000</p>
+                            </li>
+                            <li class="container">
+                                <p id="upgradeInvisibilityCost">Upgrade Cost: 2000</p>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="container" id="shop">
+                        <li>
+                            <button class="btn btn-Light" onclick="jualLove()" id="jualLove">Jual Love Potion</button>
+                            <button class="btn btn-Light" onclick="levelUpLove()" id="levelUpLove">Level up Love Potion</button>
+                        </li>
+                        <li class="container" id="loveJar">
+                            <p id="loveValue">0</p>
+                        </li>
+                        <div id="upgradecostlove">
+                            <li class="container">
+                                <p id="sellLove">Selling Price: 1500</p>
+                            </li>
+                            <li class="container">
+                                <p id="upgradeLoveCost">Upgrade Cost: 3000</p>
+                            </li>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <div id="coin"></div>
+            <div id="moneyJar">
+                <img src="Asset/Images/moneyJar.png" width="150px" /></div>
+            <div id="sprite">
+                <button onclick="spriteClick()" type="button" id="spriteClick">
+            <img src="Asset/Images/Sprite.gif" alt="Image Button" />
+          </button>
+                <div id="thirdrow" class="container">
+                    <ul id="pembeli" class="container">
+                        <li>
+                            <div class="container" id="pembeliHealing">0</div>
+                        </li>
+                        <li>
+                            <div class="container" id="pembeliInvisibility">0</div>
+                        </li>
+                        <li>
+                            <div class="container" id="pembeliLove">0</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <audio id="healing-request-sound" src="Asset/Sound/ShopBell.mp3"></audio>
+        <audio id="invisibility-request-sound" src="Asset/Sound/ShopBell.mp3"></audio>
+        <audio id="love-request-sound" src="Asset/Sound/ShopBell.mp3"></audio>
+        <audio id="money-sound" src="Asset/Sound/coin2.mp3"></audio>
+        <audio id="buying-sound" src="Asset/Sound/coin.mp3"></audio>
+        <audio id="selling-sound" src="Asset/Sound/cash.mp3"></audio>
+    </div>
+
+    <script src="WhiteMagicCss.js"></script>
+</body>
+
+</html>

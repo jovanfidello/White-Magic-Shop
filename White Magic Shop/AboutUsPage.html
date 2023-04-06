@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link href="https:fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="./Asset/Icon/witchhat.png">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">PTI - Lab</label>
+        <ul>
+            <li>
+                <button class="utama">
+                    <a class="active" href="WhiteMagicShop.html">PLAY GAME</a>
+                </button>
+            </li>
+            <li>
+                <button onclick="scrollToAbout()"><span style="color: white;">ABOUT</span></button>
+            </li>
+            <li>
+                <button onclick="scrollToRefrence()"><span style="color: white;">REFRENCES</span></button>
+            </li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="row">
+            <h1> Our Team </h1>
+            <h2>UTS Intro to Internet Technology [LAB]</h2>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="./Asset/AU_Images/linda.png" alt="linda">
+                    </div>
+                    <h3>Linda Sundoko</h3>
+                    <h3>NIM : 00000068320</p>
+                        <p>linda.sundoko@student.umn.ac.id</p>
+                        <div class="icons">
+                            <a href="https://www.instagram.com/sunfulien/" target="_blank">
+                                <i class="fab fa-instagram" aria-hidden="true" title="Instagram"></i>
+                            </a>
+                            <a href="https://www.facebook.com/linda.sundoko" target="_blank">
+                                <i class="fab fa-facebook-square" aria-hidden="true" title="Facebook"></i>
+                            </a>
+                            <a href="https://github.com/lindasun31" target="_blank">
+                                <i class="fab fa-github" aria-hidden="true" title="Github"></i>
+                            </a>
+                            <a href="mailto:linda.sundoko@student.umn.ac." target="_blank">
+                                <i class="fa fa-envelope" aria-hidden="true" title="Email"></i>
+                            </a>
+                        </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="./Asset/AU_Images/jovan.jpg" alt="jovan">
+                    </div>
+                    <h3>Jovan Fidello</h3>
+                    <h3>NIM : 00000067827</p>
+                        <p>jovan.fidello@student.umn.ac.id</p>
+                        <div class="icons">
+                            <a href="https://www.instagram.com/jovanfdllo/" target="_blank">
+                                <i class="fab fa-instagram" aria-hidden="true" title="Instagram"></i>
+                            </a>
+                            <a href="https://www.facebook.com/jovan.fidello.967/" target="_blank">
+                                <i class="fab fa-facebook-square" aria-hidden="true" title="Facebook"></i>
+                            </a>
+                            <a href="https://github.com/jovanfidello" target="_blank">
+                                <i class="fab fa-github" aria-hidden="true" title="Github"></i>
+                            </a>
+                            <a href="mailto:jovan.fidello@student.umn.ac.id" target="_blank">
+                                <i class="fa fa-envelope" aria-hidden="true" title="Email"></i>
+                            </a>
+                        </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="./Asset/AU_Images/joi.jpg" alt="joi">
+                    </div>
+                    <h3>Joicelyn Naradiska</h3>
+                    <h3>NIM : 00000068868</p>
+                        <p>joicelyn.naradiska@student.umn.ac.id</p>
+                        <div class="icons">
+                            <a href="https://www.instagram.com/joicelynee_/" target="_blank">
+                                <i class="fab fa-instagram" aria-hidden="true" title="Instagram"></i>
+                            </a>
+                            <a href="https://www.facebook.com/joicelyne.n" target="_blank">
+                                <i class="fab fa-facebook-square" aria-hidden="true" title="Facebook"></i>
+                            </a>
+                            <a href="https://github.com/joicelyne" target="_blank">
+                                <i class="fab fa-github" aria-hidden="true" title="Github"></i>
+                            </a>
+                            <a href="mailto:joicelyn.naradiska@student.umn.ac.id" target="_blank">
+                                <i class="fa fa-envelope" aria-hidden="true" title="Email"></i>
+                            </a>
+                        </div>
+                </div>
+            </div>
+            <div class="refrence" id="ref">
+                <h2>Refrences</h2>
+                <br>
+                <div class="ref-contain-container">
+                    <div class="ref-contain">
+                        <h3>Bootstrap</h3>
+                        <h4>
+                            <a href="https://getbootstrap.com/" target="_blank">https://getbootstrap.com/</a>
+                        </h4>
+                    </div>
+                    <div class="ref-contain">
+                        <h3>Uiverse</h3>
+                        <h4>
+                            <a href="https://uiverse.io/ " target="_blank">https://uiverse.io/ </a>
+                        </h4>
+                    </div>
+                    <div class="ref-contain">
+                        <h3>Neumorphishm</h3>
+                        <h4>
+                            <a href="https://neumorphism.io/" target="_blank">https://neumorphism.io/</a>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script>
+        function scrollToRefrence() {
+            const refrenceSection = document.getElementById("ref");
+            const offsetBot = refrenceSection.offsetTop + refrenceSection.offsetHeight;
+            window.scrollTo({
+                top: offsetBot,
+                behavior: 'smooth'
+            });
+        }
+
+        function scrollToAbout() {
+            const aboutSection = document.getElementById("about");
+            const buffer = 50;
+            const offsetTop = aboutSection.offsetTop - buffer;
+            window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth'
+            });
+        }
+        const checkBox = document.getElementById("check");
+        const aboutLink = document.querySelector('button[onclick="scrollToAbout()"]');
+        const refLink = document.querySelector('button[onclick="scrollToRefrence()"]');
+
+        aboutLink.addEventListener("click", function() {
+            checkBox.checked = false;
+        });
+
+        refLink.addEventListener("click", function() {
+            checkBox.checked = false;
+        });
+    </script>
+</body>
+
+</html>

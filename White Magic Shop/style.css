@@ -1,0 +1,291 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f5f5f5;
+    font-family: montserrat;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #0083e6;
+    height: 80px;
+    width: 100%;
+    z-index: 999;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+button {
+    background: #0a92fa;
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 4px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+}
+
+button:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+}
+
+button:active {
+    background: #0026ff;
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+}
+
+.utama {
+    background-color: #7cbef0;
+}
+
+a.active,
+a:hover {
+    transition: 1s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+section {
+    margin-top: 80px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em 1em;
+    text-align: center;
+}
+
+.column {
+    width: 100%;
+    padding: 0.5em 0;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 3.5em;
+    color: navy;
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    color: navy;
+}
+
+h3 {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+.card {
+    padding: 3.5em 1em;
+    color: rgb(0, 85, 128);
+    cursor: pointer;
+    transition: 0.7s;
+    border-radius: 25px;
+    background: #f9f8f8;
+    box-shadow: 8px 8px 7px #d2d2d2, -8px -8px 7px #ffffff;
+}
+
+.card .img-container {
+    width: 255px;
+    height: 300px;
+    /* background-color: #6895c3; */
+    padding: 0.5em;
+    /* border-radius: 15%; */
+    margin: 0 auto 2em auto;
+    border-radius: 41px;
+    background: #beddfe;
+    box-shadow: 5px 5px 0px #4c5866, -5px -5px 0px #ffffff;
+}
+
+.card img {
+    width: 230px;
+    height: 280px;
+    border-radius: 15%;
+}
+
+.card h3 {
+    font-weight: 500;
+}
+
+.card p {
+    font-weight: 300;
+    font-size: 15px;
+    text-transform: lowercase;
+    margin: 0.5em 0 2em 0;
+    letter-spacing: 1px;
+}
+
+.icons {
+    width: 50%;
+    min-width: 180px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.4em;
+}
+
+.card:hover {
+    background: linear-gradient(rgb(43, 87, 137), rgb(104, 160, 244));
+    color: white;
+    transition: 1s;
+}
+
+.card:hover .img-container {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+@media screen and (min-width: 768px) {
+    section {
+        padding: 1em 7em;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    section {
+        padding: 1em;
+    }
+    .card {
+        padding: 5em 1em;
+    }
+    .column {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+        padding: 0 1em;
+    }
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover,
+    a.active {
+        background: none;
+        color: white;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+i[title] {
+    position: relative;
+}
+
+i[title]:hover:after {
+    font-family: "Poppins", sans-serif;
+    content: attr(title);
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.refrence {
+    text-align: center;
+    margin: 100px auto 0;
+}
+
+.ref-contain {
+    margin-bottom: 30px;
+}
