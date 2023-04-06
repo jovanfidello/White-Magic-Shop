@@ -28,5 +28,4 @@ Aturan Permainan : <br />
 - Level Up Love Potion<br />
 11. Biaya upgrade dan harga jual akan bertambah apabila potion di upgrade.<br />
 12. Jumlah request pembeli bisa dilihat dari angka pada simbol yang ada di atas meja.<br />
-13. Apabila pemain tidak memiliki cukup uang saat membeli barang, maka akan muncul<br />
-peringatan bahwa uang tidak cukup.<br />
+13. Apabila pemain tidak memiliki cukup uang saat membeli barang, maka akan muncul peringatan bahwa uang tidak cukup.<br />
